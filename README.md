@@ -2,18 +2,6 @@
   <img src="banner.svg" width="100%" alt="Naman Jain - AI Engineer & Forward Deploy Engineer" />
 </p>
 
-<!-- Action Link Button Hub -->
-<p align="center">
-  <a href="https://huggingface.co/spaces/namanvjain/carrerbot" title="Open Naman Bot">
-    <img src="button_bot.svg" height="42" alt="Open Naman Bot" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://namanvjain.netlify.app/" title="Visit My Portfolio">
-    <img src="button_portfolio.svg" height="42" alt="Visit My Portfolio" />
-  </a>
-  &nbsp;&nbsp;
-  <!-- START_RESUME_LINK --><a href="Resume/NamamJainResume.pdf" title="Download Resume"><img src="button_resume.svg" height="42" alt="Download Resume" /></a><!-- END_RESUME_LINK -->
-</p>
 
 <br/>
 

@@ -1,9 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 670" width="100%" height="670">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="100%" height="750">
   <defs>
-    <!-- Fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
 
+      /* ── Keyframes ── */
+      @keyframes typeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes glowPulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+
+      /* ── Base Styles ── */
       .window-bg {
         fill: url(#bgGrad);
         stroke: url(#borderGrad);
@@ -16,27 +30,52 @@
       }
       .ascii-art {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 5.6px;
+        font-size: 5.8px;
         fill: url(#asciiGrad);
         font-weight: 700;
       }
-      .prompt-text {
+      .prompt {
         font-family: 'JetBrains Mono', monospace;
         font-size: 15px;
         fill: #00F2FE;
         font-weight: 700;
       }
-      .command-text {
+      .cmd {
         font-family: 'JetBrains Mono', monospace;
         font-size: 15px;
         fill: #FFFFFF;
-        font-weight: 400;
       }
-      .bio-text {
+      .bio {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 14.5px;
-        fill: #E2E8F0;
-        line-height: 1.6;
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+      .btn-bg {
+        fill: #1E293B;
+        stroke-width: 1.5;
+        rx: 8;
+      }
+      .btn-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+
+      /* ── Staggered Animations ── */
+      .a-prompt1  { opacity: 0; animation: typeIn 0.1s ease forwards 0.3s; }
+      .a-bio1     { opacity: 0; animation: typeIn 0.4s ease forwards 0.8s; }
+      .a-bio2     { opacity: 0; animation: typeIn 0.4s ease forwards 1.5s; }
+      .a-bio3     { opacity: 0; animation: typeIn 0.4s ease forwards 2.2s; }
+      .a-bio4     { opacity: 0; animation: typeIn 0.4s ease forwards 2.9s; }
+      .a-prompt2  { opacity: 0; animation: typeIn 0.3s ease forwards 3.8s; }
+      .a-portrait { opacity: 0; animation: typeIn 0.8s ease forwards 4.3s; }
+      .a-buttons  { opacity: 0; animation: typeIn 0.5s ease forwards 5.2s; }
+
+      /* ── Cursor ── */
+      .cursor {
+        fill: #00FF87;
+        animation: blink 1s step-end infinite;
       }
     </style>
 
@@ -46,106 +85,147 @@
       <stop offset="100%" stop-color="#111827" />
     </linearGradient>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3" />
-      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.4" />
     </linearGradient>
     <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00F2FE" />
       <stop offset="50%" stop-color="#4FACFE" />
       <stop offset="100%" stop-color="#00FF87" />
     </linearGradient>
+    <linearGradient id="cyanBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+    <linearGradient id="purpleBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#D946EF" />
+    </linearGradient>
+    <linearGradient id="greenBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF87" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
   </defs>
 
-  <!-- Card Window Background -->
-  <rect width="1000" height="670" rx="12" class="window-bg" />
+  <!-- ═══════ Window Background ═══════ -->
+  <rect width="1000" height="750" rx="12" class="window-bg" />
 
-  <!-- macOS Style Title Bar -->
+  <!-- ═══════ macOS Title Bar ═══════ -->
   <line x1="0" y1="40" x2="1000" y2="40" stroke="#1E293B" stroke-width="1.5" />
   <circle cx="25" cy="20" r="6" fill="#FF5F56" />
   <circle cx="45" cy="20" r="6" fill="#FFBD2E" />
   <circle cx="65" cy="20" r="6" fill="#27C93F" />
   <text x="500" y="25" text-anchor="middle" class="title-text">naman@portfolio: ~</text>
 
-  <!-- Terminal Session Output -->
-  
-  <!-- Bio Section (Command Output) -->
-  <text x="45" y="80">
-    <tspan class="prompt-text">naman@portfolio:~$ </tspan>
-    <tspan class="command-text">cat intro.txt</tspan>
+  <!-- ═══════ Command 1: cat intro.txt ═══════ -->
+  <g class="a-prompt1">
+    <text x="40" y="75">
+      <tspan class="prompt">naman@portfolio:~$ </tspan>
+      <tspan class="cmd">cat intro.txt</tspan>
+    </text>
+    <!-- Blinking cursor after command -->
+    <rect x="275" y="62" width="8" height="17" class="cursor" />
+  </g>
+
+  <!-- Bio Output (line-by-line typing) -->
+  <text x="40" y="105" class="bio a-bio1">
+    An Oracle Certified AI Engineer, Anthropic MCP Certified developer, and former 2× founder.
   </text>
-  
-  <text x="45" y="110" class="bio-text">
-    <tspan x="45" dy="0">An Oracle Certified AI Engineer, Anthropic MCP Certified developer, and former 2× founder.</tspan>
-    <tspan x="45" dy="24">Currently working as an AI Engineer at Scanbo, I specialize in building scalable AI systems</tspan>
-    <tspan x="45" dy="24">using LangChain, LangGraph, and Agentic RAG. Driven by a founder's mindset, I bridge</tspan>
-    <tspan x="45" dy="24">customer problems with production-ready AI agents and enterprise workflow automations.</tspan>
+  <text x="40" y="127" class="bio a-bio2">
+    Currently working as an AI Engineer at Scanbo, I specialize in building scalable AI systems
+  </text>
+  <text x="40" y="149" class="bio a-bio3">
+    using LangChain, LangGraph, and Agentic RAG. Driven by a founder's mindset, I bridge
+  </text>
+  <text x="40" y="171" class="bio a-bio4">
+    customer problems with production-ready AI agents and enterprise workflow automations.
   </text>
 
-  <!-- Portrait Section (Command Output) -->
-  <text x="45" y="225">
-    <tspan class="prompt-text">naman@portfolio:~$ </tspan>
-    <tspan class="command-text">view portrait.sh</tspan>
-  </text>
+  <!-- ═══════ Command 2: view portrait.sh ═══════ -->
+  <g class="a-prompt2">
+    <text x="40" y="210">
+      <tspan class="prompt">naman@portfolio:~$ </tspan>
+      <tspan class="cmd">./view portrait.sh</tspan>
+    </text>
+    <rect x="310" y="197" width="8" height="17" class="cursor" />
+  </g>
 
-  <!-- Centered ASCII Art Portrait -->
-  <text class="ascii-art" xml:space="preserve">
-<tspan x="310" y="245">                                                ...........                                         </tspan>
-<tspan x="310" dy="7.0">                                       .....::--==-=---:::::......                                  </tspan>
-<tspan x="310" dy="7.0">                                    ..:=+***+-++++++=+**+==---:....                                 </tspan>
-<tspan x="310" dy="7.0">                                  ..-==++#********+***=+=-+==::-==:..                               </tspan>
-<tspan x="310" dy="7.0">                                ..-==+*###*##*++*+=*#+**#+=++==:::---:... ..                        </tspan>
-<tspan x="310" dy="7.0">                               .:-+#######*###*****##*******#***=----=--:...                        </tspan>
-<tspan x="310" dy="7.0">                             ..-+##+######*#***#########*#**#****=--==--==-:...                     </tspan>
-<tspan x="310" dy="7.0">                           ...+*##*++*#################***########=---==--++-...                    </tspan>
-<tspan x="310" dy="7.0">                           ..+######**############*#########*==+*=+++*=-=+===:..                    </tspan>
-<tspan x="310" dy="7.0">                         ..:*######################*##########*++=+=##**+=++=-..                    </tspan>
-<tspan x="310" dy="7.0">                         .-*#########################**##*###*****++++*++==+++-.                    </tspan>
-<tspan x="310" dy="7.0">                        .-###################################**++**=-:=*++*+===:.                   </tspan>
-<tspan x="310" dy="7.0">                       ..*################################********+*-::-=+==++==..                  </tspan>
-<tspan x="310" dy="7.0">                       .=########*#****################********###+-:::-.-==-+=:..                  </tspan>
-<tspan x="310" dy="7.0">                       .######******++***************++++++++***+==-:..-:-==+-=:..                  </tspan>
-<tspan x="310" dy="7.0">                      .:######******+++++++**++++++++++++++++==--====---==-=+==-..                  </tspan>
-<tspan x="310" dy="7.0">                     ..:######*****+++++++++++++++++++++++====-------==----=+*=-..                  </tspan>
-<tspan x="310" dy="7.0">                      .-######****+++++++++++++++++++++++======-=-::::-----==**=..                  </tspan>
-<tspan x="310" dy="7.0">                      .-#####*****+++*********+++++++++++*******+==-:::----=+**+..                  </tspan>
-<tspan x="310" dy="7.0">                       -#####*******+++++==+++****++++++****++====----::::-=+**+:.                  </tspan>
-<tspan x="310" dy="7.0">                       -###**=-=++++++++++=====++*++++++++==+=========--::----+*...                 </tspan>
-<tspan x="310" dy="7.0">                     ..:#*=***+=+++=++++++*++++++++****=+++***+++++-===-::::==-=....                </tspan>
-<tspan x="310" dy="7.0">                 ..:+++=#*##***=+++++++********++++**+*=++*******+++++==-:--++---++-..              </tspan>
-<tspan x="310" dy="7.0">                ...+++++*###***+++++*++++++++***++*+++=+==+*+=++++++=+==--=-====++++:..             </tspan>
-<tspan x="310" dy="7.0">                ..:+++++++##***+=+++++++++++++++++*+++==+=++++=+++===----:::-======+=..             </tspan>
-<tspan x="310" dy="7.0">                ..:+++++++#****++===+++=++++==++**++++===+--===+===----.::::-===--+++...            </tspan>
-<tspan x="310" dy="7.0">                ...+*+++*##***++++======+++++++*+++++=---===---------:::::::-+++=:=++:.             </tspan>
-<tspan x="310" dy="7.0">                ...=*++***##**++++++========+****+++==----++===-----:::::-::--+++=-+-...            </tspan>
-<tspan x="310" dy="7.0">                 ..:*+****##**+++++++++++++**++++++====-----+++======--::--:-==*+-+-...             </tspan>
-<tspan x="310" dy="7.0">                 ...-*+***##****+++++++++***++++++++===++===+**+++====-----:-++-===....             </tspan>
-<tspan x="310" dy="7.0">                  ...+**+*###***++++++++***********+++*****+++**+++++===-----:==--..                </tspan>
-<tspan x="310" dy="7.0">                  ...-*****##****+++++**#****#############*+++***++++++=-=-==:---:..                </tspan>
-<tspan x="310" dy="7.0">                  ...:++++*###****++++*###*****##*********++***#*++++++===-=+-:-=:...               </tspan>
-<tspan x="310" dy="7.0">                  .....:--:-###*#**++**##***+++++******++++*****#*+++++++==-:-==:...                </tspan>
-<tspan x="310" dy="7.0">                           .+#**##**++****##++#=+=-=--+==+=###****+++**++==.......                  </tspan>
-<tspan x="310" dy="7.0">                           ..*#***#******+*****++++++**+===++++**+++***+++-.                        </tspan>
-<tspan x="310" dy="7.0">                           ..-####*******+++++++++++++++++++++++++*****++=...                       </tspan>
-<tspan x="310" dy="7.0">                             .+#####****+++++************+++++++++******+:..                        </tspan>
-<tspan x="310" dy="7.0">                         ....:-########******++*********+++++++++*******-.                          </tspan>
-<tspan x="310" dy="7.0">                         ...-+**########******++******+++++++*+*******+=.                           </tspan>
-<tspan x="310" dy="7.0">                        ...--+#**########********+***+++++++***+*****+:..                           </tspan>
-<tspan x="310" dy="7.0">                        ..:--+#****#*####**#*****************+****++=:..                            </tspan>
-<tspan x="310" dy="7.0">                      ...-::-=*******#########******#********#****+--...                            </tspan>
-<tspan x="310" dy="7.0">                     ...------#**+*******######*****###****##***+==--....                           </tspan>
-<tspan x="310" dy="7.0">                  .....:------*#*++++******#################**++===--.....                          </tspan>
-<tspan x="310" dy="7.0">                ......---------#**+++++*********######**#****++===--=:.........                     </tspan>
-<tspan x="310" dy="7.0">             ......::--------:-+#**++++++*+***************++++====--+:...  ...........              </tspan>
-<tspan x="310" dy="7.0">        .......::------------::-*#**++++++++++++**+++++++++++=+===-=*:..  ......  ........          </tspan>
-  <tspan x="310" dy="7.0">  .......::::::::------------:::-****+++++++++++++++++++++++++===-=*+....   .... .................. </tspan>
-<tspan x="310" dy="7.0">.......:-------------------::::::-#***++++++++++++++++++++++++++=+**=....    ...    ................</tspan>
-<tspan x="310" dy="7.0">.........:-----------------:::::::-*****+++++++++++++++++++++++++***:....          ..:..............</tspan>
-<tspan x="310" dy="7.0">........::::----------------:::::::-*****++++++++++++++++++++++****-...            ...:....:........</tspan>
-<tspan x="310" dy="7.0">..:::--::::::----------------::::::::+****+++++++++++++++++++*****+:...             ................</tspan>
-<tspan x="310" dy="7.0">..------::::-:---------------:::::::::+****+++++++++++++++++*****#-.:-...             ...........:.:</tspan>
-<tspan x="310" dy="7.0">.:--------------------------::::::::--:-*****++++++++++++++******::-=-::..            ..........::::</tspan>
-<tspan x="310" dy="7.0">----------------------:----:::::::----:::=***+++++++++++++*****=::-=-::::....     .............:::::</tspan>
-<tspan x="310" dy="7.0">----------------:-----::::::-:::-=---::::::-+++++++++++++**+:::----::::::::....  ..............:::::</tspan>
-  </text>
+  <!-- ═══════ ASCII Art Portrait (Full Width Centered) ═══════ -->
+  <g class="a-portrait">
+    <text class="ascii-art" xml:space="preserve">
+<tspan x="200" y="240">                                                ...........                                         </tspan>
+<tspan x="200" dy="7">                                       .....::--==-=---:::::......                                  </tspan>
+<tspan x="200" dy="7">                                    ..:=+***+-++++++=+**+==---:....                                 </tspan>
+<tspan x="200" dy="7">                                  ..-==++#********+***=+=-+==::-==:..                               </tspan>
+<tspan x="200" dy="7">                                ..-==+*###*##*++*+=*#+**#+=++==:::---:... ..                        </tspan>
+<tspan x="200" dy="7">                               .:-+#######*###*****##*******#***=----=--:...                        </tspan>
+<tspan x="200" dy="7">                             ..-+##+######*#***#########*#**#****=--==--==-:...                     </tspan>
+<tspan x="200" dy="7">                           ...+*##*++*#################***########=---==--++-...                    </tspan>
+<tspan x="200" dy="7">                           ..+######**############*#########*==+*=+++*=-=+===:..                    </tspan>
+<tspan x="200" dy="7">                         ..:*######################*##########*++=+=##**+=++=-..                    </tspan>
+<tspan x="200" dy="7">                         .-*#########################**##*###*****++++*++==+++-.                    </tspan>
+<tspan x="200" dy="7">                        .-###################################**++**=-:=*++*+===:.                   </tspan>
+<tspan x="200" dy="7">                       ..*################################********+*-::-=+==++==..                  </tspan>
+<tspan x="200" dy="7">                       .=########*#****################********###+-:::-.-==-+=:..                  </tspan>
+<tspan x="200" dy="7">                       .######******++***************++++++++***+==-:..-:-==+-=:..                  </tspan>
+<tspan x="200" dy="7">                      .:######******+++++++**++++++++++++++++==--====---==-=+==-..                  </tspan>
+<tspan x="200" dy="7">                     ..:######*****+++++++++++++++++++++++====-------==----=+*=-..                  </tspan>
+<tspan x="200" dy="7">                      .-######****+++++++++++++++++++++++======-=-::::-----==**=..                  </tspan>
+<tspan x="200" dy="7">                      .-#####*****+++*********+++++++++++*******+==-:::----=+**+..                  </tspan>
+<tspan x="200" dy="7">                       -#####*******+++++==+++****++++++****++====----::::-=+**+:.                  </tspan>
+<tspan x="200" dy="7">                       -###**=-=++++++++++=====++*++++++++==+=========--::----+*...                 </tspan>
+<tspan x="200" dy="7">                     ..:#*=***+=+++=++++++*++++++++****=+++***+++++-===-::::==-=....                </tspan>
+<tspan x="200" dy="7">                 ..:+++=#*##***=+++++++********++++**+*=++*******+++++==-:--++---++-..              </tspan>
+<tspan x="200" dy="7">                ...+++++*###***+++++*++++++++***++*+++=+==+*+=++++++=+==--=-====++++:..             </tspan>
+<tspan x="200" dy="7">                ..:+++++++##***+=+++++++++++++++++*+++==+=++++=+++===----:::-======+=..             </tspan>
+<tspan x="200" dy="7">                ..:+++++++#****++===+++=++++==++**++++===+--===+===----.::::-===--+++...            </tspan>
+<tspan x="200" dy="7">                ...+*+++*##***++++======+++++++*+++++=---===---------:::::::-+++=:=++:.             </tspan>
+<tspan x="200" dy="7">                ...=*++***##**++++++========+****+++==----++===-----:::::-::--+++=-+-...            </tspan>
+<tspan x="200" dy="7">                 ..:*+****##**+++++++++++++**++++++====-----+++======--::--:-==*+-+-...             </tspan>
+<tspan x="200" dy="7">                 ...-*+***##****+++++++++***++++++++===++===+**+++====-----:-++-===....             </tspan>
+<tspan x="200" dy="7">                  ...+**+*###***++++++++***********+++*****+++**+++++===-----:==--..                </tspan>
+<tspan x="200" dy="7">                  ...-*****##****+++++**#****#############*+++***++++++=-=-==:---:..                </tspan>
+<tspan x="200" dy="7">                  ...:++++*###****++++*###*****##*********++***#*++++++===-=+-:-=:...               </tspan>
+<tspan x="200" dy="7">                  .....:--:-###*#**++**##***+++++******++++*****#*+++++++==-:-==:...                </tspan>
+<tspan x="200" dy="7">                           .+#**##**++****##++#=+=-=--+==+=###****+++**++==.......                  </tspan>
+<tspan x="200" dy="7">                           ..*#***#******+*****++++++**+===++++**+++***+++-.                        </tspan>
+<tspan x="200" dy="7">                           ..-####*******+++++++++++++++++++++++++*****++=...                       </tspan>
+<tspan x="200" dy="7">                             .+#####****+++++************+++++++++******+:..                        </tspan>
+<tspan x="200" dy="7">                         ....:-########******++*********+++++++++*******-.                          </tspan>
+<tspan x="200" dy="7">                         ...-+**########******++******+++++++*+*******+=.                           </tspan>
+<tspan x="200" dy="7">                        ...--+#**########********+***+++++++***+*****+:..                           </tspan>
+<tspan x="200" dy="7">                        ..:--+#****#*####**#*****************+****++=:..                            </tspan>
+<tspan x="200" dy="7">                      ...-::-=*******#########******#********#****+--...                            </tspan>
+<tspan x="200" dy="7">                     ...------#**+*******######*****###****##***+==--....                           </tspan>
+<tspan x="200" dy="7">                  .....:------*#*++++******#################**++===--.....                          </tspan>
+<tspan x="200" dy="7">                ......---------#**+++++*********######**#****++===--=:.........                     </tspan>
+<tspan x="200" dy="7">             ......::--------:-+#**++++++*+***************++++====--+:...  ...........              </tspan>
+<tspan x="200" dy="7">        .......::------------::-*#**++++++++++++**+++++++++++=+===-=*:..  ......  ........          </tspan>
+<tspan x="200" dy="7">  .......::::::::------------:::-****+++++++++++++++++++++++++===-=*+....   .... .................. </tspan>
+<tspan x="200" dy="7">.......:-------------------::::::-#***++++++++++++++++++++++++++=+**=....    ...    ................</tspan>
+<tspan x="200" dy="7">.........:-----------------:::::::-*****+++++++++++++++++++++++++***:....          ..:..............</tspan>
+<tspan x="200" dy="7">........::::----------------:::::::-*****++++++++++++++++++++++****-...            ...:....:........</tspan>
+<tspan x="200" dy="7">..:::--::::::----------------::::::::+****+++++++++++++++++++*****+:...             ................</tspan>
+<tspan x="200" dy="7">..------::::-:---------------:::::::::+****+++++++++++++++++*****#-.:-...             ...........:.:</tspan>
+<tspan x="200" dy="7">.:--------------------------::::::::--:-*****++++++++++++++******::-=-::..            ..........::::</tspan>
+<tspan x="200" dy="7">----------------------:----:::::::----:::=***+++++++++++++*****=::-=-::::....     .............:::::</tspan>
+<tspan x="200" dy="7">----------------:-----::::::-:::-=---::::::-+++++++++++++**+:::----::::::::....  ..............:::::</tspan>
+    </text>
+  </g>
+
+  <!-- ═══════ Three Action Buttons ═══════ -->
+  <g class="a-buttons">
+    <!-- Button 1: Open Naman Bot -->
+    <rect x="70" y="700" width="260" height="38" rx="8" class="btn-bg" stroke="url(#cyanBorder)" />
+    <text x="200" y="724" class="btn-text" fill="#00F2FE">💬  Open Naman Bot</text>
+
+    <!-- Button 2: Visit Portfolio -->
+    <rect x="370" y="700" width="260" height="38" rx="8" class="btn-bg" stroke="url(#purpleBorder)" />
+    <text x="500" y="724" class="btn-text" fill="#BF5AF2">🌐  Visit Portfolio</text>
+
+    <!-- Button 3: Download Resume -->
+    <rect x="670" y="700" width="260" height="38" rx="8" class="btn-bg" stroke="url(#greenBorder)" />
+    <text x="800" y="724" class="btn-text" fill="#00FF87">📄  Download Resume</text>
+  </g>
 </svg>
