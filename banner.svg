@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 520" width="100%" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 670" width="100%" height="670">
   <defs>
     <!-- Fonts -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
 
       .window-bg {
         fill: url(#bgGrad);
@@ -16,59 +16,27 @@
       }
       .ascii-art {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 5.8px;
+        font-size: 5.6px;
         fill: url(#asciiGrad);
         font-weight: 700;
       }
-      .name-text {
-        font-family: 'Inter', sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        fill: #FFFFFF;
-      }
       .prompt-text {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 16px;
+        font-size: 15px;
         fill: #00F2FE;
         font-weight: 700;
       }
-      .role-text {
+      .command-text {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 20px;
-        fill: #00FF87;
-        font-weight: 700;
-      }
-      .heading-text {
-        font-family: 'Inter', sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        fill: #E2E8F0;
-      }
-      .bullet-text {
-        font-family: 'Inter', sans-serif;
         font-size: 15px;
-        fill: #94A3B8;
+        fill: #FFFFFF;
+        font-weight: 400;
       }
-      .chat-header {
-        font-family: 'Inter', sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        fill: #94A3B8;
-      }
-      .chat-btn-text {
-        font-family: 'Inter', sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-        fill: #00FF87;
-      }
-      .card-border {
-        stroke: #334155;
-        stroke-width: 1;
-        fill: #1E293B;
-      }
-      .card-border:hover {
-        stroke: #4FACFE;
-        cursor: pointer;
+      .bio-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 14.5px;
+        fill: #E2E8F0;
+        line-height: 1.6;
       }
     </style>
 
@@ -87,200 +55,97 @@
       <stop offset="50%" stop-color="#4FACFE" />
       <stop offset="100%" stop-color="#00FF87" />
     </linearGradient>
-
-    <!-- Typewriter Reveal Clips -->
-    <clipPath id="clip1">
-      <rect x="705" y="140" height="40" width="0">
-        <animate attributeName="width" 
-                 values="0;0;145;145;0;0;0" 
-                 keyTimes="0;0.02;0.10;0.25;0.33;0.331;1" 
-                 dur="12s" repeatCount="indefinite" />
-      </rect>
-    </clipPath>
-    <clipPath id="clip2">
-      <rect x="705" y="140" height="40" width="0">
-        <animate attributeName="width" 
-                 values="0;0;0;250;250;0;0;0" 
-                 keyTimes="0;0.349;0.35;0.43;0.58;0.66;0.661;1" 
-                 dur="12s" repeatCount="indefinite" />
-      </rect>
-    </clipPath>
-    <clipPath id="clip3">
-      <rect x="705" y="140" height="40" width="0">
-        <animate attributeName="width" 
-                 values="0;0;0;190;190;0;0;0" 
-                 keyTimes="0;0.679;0.68;0.76;0.91;0.99;0.991;1" 
-                 dur="12s" repeatCount="indefinite" />
-      </rect>
-    </clipPath>
   </defs>
 
   <!-- Card Window Background -->
-  <rect width="950" height="520" rx="12" class="window-bg" />
+  <rect width="1000" height="670" rx="12" class="window-bg" />
 
   <!-- macOS Style Title Bar -->
-  <line x1="0" y1="40" x2="950" y2="40" stroke="#1E293B" stroke-width="1.5" />
+  <line x1="0" y1="40" x2="1000" y2="40" stroke="#1E293B" stroke-width="1.5" />
   <circle cx="25" cy="20" r="6" fill="#FF5F56" />
   <circle cx="45" cy="20" r="6" fill="#FFBD2E" />
   <circle cx="65" cy="20" r="6" fill="#27C93F" />
-  <text x="475" y="25" text-anchor="middle" class="title-text">naman@portfolio: ~</text>
+  <text x="500" y="25" text-anchor="middle" class="title-text">naman@portfolio: ~</text>
 
-  <!-- Left: ASCII Art Portrait -->
+  <!-- Terminal Session Output -->
+  
+  <!-- Bio Section (Command Output) -->
+  <text x="45" y="80">
+    <tspan class="prompt-text">naman@portfolio:~$ </tspan>
+    <tspan class="command-text">cat intro.txt</tspan>
+  </text>
+  
+  <text x="45" y="110" class="bio-text">
+    <tspan x="45" dy="0">An Oracle Certified AI Engineer, Anthropic MCP Certified developer, and former 2× founder.</tspan>
+    <tspan x="45" dy="24">Currently working as an AI Engineer at Scanbo, I specialize in building scalable AI systems</tspan>
+    <tspan x="45" dy="24">using LangChain, LangGraph, and Agentic RAG. Driven by a founder's mindset, I bridge</tspan>
+    <tspan x="45" dy="24">customer problems with production-ready AI agents and enterprise workflow automations.</tspan>
+  </text>
+
+  <!-- Portrait Section (Command Output) -->
+  <text x="45" y="225">
+    <tspan class="prompt-text">naman@portfolio:~$ </tspan>
+    <tspan class="command-text">view portrait.sh</tspan>
+  </text>
+
+  <!-- Centered ASCII Art Portrait -->
   <text class="ascii-art" xml:space="preserve">
-<tspan x="20" y="70">                                                ...........                                         </tspan>
-<tspan x="20" dy="7.5">                                       .....::--==-=---:::::......                                  </tspan>
-<tspan x="20" dy="7.5">                                    ..:=+***+-++++++=+**+==---:....                                 </tspan>
-<tspan x="20" dy="7.5">                                  ..-==++#********+***=+=-+==::-==:..                               </tspan>
-<tspan x="20" dy="7.5">                                ..-==+*###*##*++*+=*#+**#+=++==:::---:... ..                        </tspan>
-<tspan x="20" dy="7.5">                               .:-+#######*###*****##*******#***=----=--:...                        </tspan>
-<tspan x="20" dy="7.5">                             ..-+##+######*#***#########*#**#****=--==--==-:...                     </tspan>
-<tspan x="20" dy="7.5">                           ...+*##*++*#################***########=---==--++-...                    </tspan>
-<tspan x="20" dy="7.5">                           ..+######**############*#########*==+*=+++*=-=+===:..                    </tspan>
-<tspan x="20" dy="7.5">                         ..:*######################*##########*++=+=##**+=++=-..                    </tspan>
-<tspan x="20" dy="7.5">                         .-*#########################**##*###*****++++*++==+++-.                    </tspan>
-<tspan x="20" dy="7.5">                        .-###################################**++**=-:=*++*+===:.                   </tspan>
-<tspan x="20" dy="7.5">                       ..*################################********+*-::-=+==++==..                  </tspan>
-<tspan x="20" dy="7.5">                       .=########*#****################********###+-:::-.-==-+=:..                  </tspan>
-<tspan x="20" dy="7.5">                       .######******++***************++++++++***+==-:..-:-==+-=:..                  </tspan>
-<tspan x="20" dy="7.5">                      .:######******+++++++**++++++++++++++++==--====---==-=+==-..                  </tspan>
-<tspan x="20" dy="7.5">                     ..:######*****+++++++++++++++++++++++====-------==----=+*=-..                  </tspan>
-<tspan x="20" dy="7.5">                      .-######****+++++++++++++++++++++++======-=-::::-----==**=..                  </tspan>
-<tspan x="20" dy="7.5">                      .-#####*****+++*********+++++++++++*******+==-:::----=+**+..                  </tspan>
-<tspan x="20" dy="7.5">                       -#####*******+++++==+++****++++++****++====----::::-=+**+:.                  </tspan>
-<tspan x="20" dy="7.5">                       -###**=-=++++++++++=====++*++++++++==+=========--::----+*...                 </tspan>
-<tspan x="20" dy="7.5">                     ..:#*=***+=+++=++++++*++++++++****=+++***+++++-===-::::==-=....                </tspan>
-<tspan x="20" dy="7.5">                 ..:+++=#*##***=+++++++********++++**+*=++*******+++++==-:--++---++-..              </tspan>
-<tspan x="20" dy="7.5">                ...+++++*###***+++++*++++++++***++*+++=+==+*+=++++++=+==--=-====++++:..             </tspan>
-<tspan x="20" dy="7.5">                ..:+++++++##***+=+++++++++++++++++*+++==+=++++=+++===----:::-======+=..             </tspan>
-<tspan x="20" dy="7.5">                ..:+++++++#****++===+++=++++==++**++++===+--===+===----.::::-===--+++...            </tspan>
-<tspan x="20" dy="7.5">                ...+*+++*##***++++======+++++++*+++++=---===---------:::::::-+++=:=++:.             </tspan>
-<tspan x="20" dy="7.5">                ...=*++***##**++++++========+****+++==----++===-----:::::-::--+++=-+-...            </tspan>
-<tspan x="20" dy="7.5">                 ..:*+****##**+++++++++++++**++++++====-----+++======--::--:-==*+-+-...             </tspan>
-<tspan x="20" dy="7.5">                 ...-*+***##****+++++++++***++++++++===++===+**+++====-----:-++-===....             </tspan>
-<tspan x="20" dy="7.5">                  ...+**+*###***++++++++***********+++*****+++**+++++===-----:==--..                </tspan>
-<tspan x="20" dy="7.5">                  ...-*****##****+++++**#****#############*+++***++++++=-=-==:---:..                </tspan>
-<tspan x="20" dy="7.5">                  ...:++++*###****++++*###*****##*********++***#*++++++===-=+-:-=:...               </tspan>
-<tspan x="20" dy="7.5">                  .....:--:-###*#**++**##***+++++******++++*****#*+++++++==-:-==:...                </tspan>
-<tspan x="20" dy="7.5">                           .+#**##**++****##++#=+=-=--+==+=###****+++**++==.......                  </tspan>
-<tspan x="20" dy="7.5">                           ..*#***#******+*****++++++**+===++++**+++***+++-.                        </tspan>
-<tspan x="20" dy="7.5">                           ..-####*******+++++++++++++++++++++++++*****++=...                       </tspan>
-<tspan x="20" dy="7.5">                             .+#####****+++++************+++++++++******+:..                        </tspan>
-<tspan x="20" dy="7.5">                         ....:-########******++*********+++++++++*******-.                          </tspan>
-<tspan x="20" dy="7.5">                         ...-+**########******++******+++++++*+*******+=.                           </tspan>
-<tspan x="20" dy="7.5">                        ...--+#**########********+***+++++++***+*****+:..                           </tspan>
-<tspan x="20" dy="7.5">                        ..:--+#****#*####**#*****************+****++=:..                            </tspan>
-<tspan x="20" dy="7.5">                      ...-::-=*******#########******#********#****+--...                            </tspan>
-<tspan x="20" dy="7.5">                     ...------#**+*******######*****###****##***+==--....                           </tspan>
-<tspan x="20" dy="7.5">                  .....:------*#*++++******#################**++===--.....                          </tspan>
-<tspan x="20" dy="7.5">                ......---------#**+++++*********######**#****++===--=:.........                     </tspan>
-<tspan x="20" dy="7.5">             ......::--------:-+#**++++++*+***************++++====--+:...  ...........              </tspan>
-<tspan x="20" dy="7.5">        .......::------------::-*#**++++++++++++**+++++++++++=+===-=*:..  ......  ........          </tspan>
-  <tspan x="20" dy="7.5">  .......::::::::------------:::-****+++++++++++++++++++++++++===-=*+....   .... .................. </tspan>
-<tspan x="20" dy="7.5">.......:-------------------::::::-#***++++++++++++++++++++++++++=+**=....    ...    ................</tspan>
-<tspan x="20" dy="7.5">.........:-----------------:::::::-*****+++++++++++++++++++++++++***:....          ..:..............</tspan>
-<tspan x="20" dy="7.5">........::::----------------:::::::-*****++++++++++++++++++++++****-...            ...:....:........</tspan>
-<tspan x="20" dy="7.5">..:::--::::::----------------::::::::+****+++++++++++++++++++*****+:...             ................</tspan>
-<tspan x="20" dy="7.5">..------::::-:---------------:::::::::+****+++++++++++++++++*****#-.:-...             ...........:.:</tspan>
-<tspan x="20" dy="7.5">.:--------------------------::::::::--:-*****++++++++++++++******::-=-::..            ..........::::</tspan>
-<tspan x="20" dy="7.5">----------------------:----:::::::----:::=***+++++++++++++*****=::-=-::::....     .............:::::</tspan>
-<tspan x="20" dy="7.5">----------------:-----::::::-:::-=---::::::-+++++++++++++**+:::----::::::::....  ..............:::::</tspan>
+<tspan x="310" y="245">                                                ...........                                         </tspan>
+<tspan x="310" dy="7.0">                                       .....::--==-=---:::::......                                  </tspan>
+<tspan x="310" dy="7.0">                                    ..:=+***+-++++++=+**+==---:....                                 </tspan>
+<tspan x="310" dy="7.0">                                  ..-==++#********+***=+=-+==::-==:..                               </tspan>
+<tspan x="310" dy="7.0">                                ..-==+*###*##*++*+=*#+**#+=++==:::---:... ..                        </tspan>
+<tspan x="310" dy="7.0">                               .:-+#######*###*****##*******#***=----=--:...                        </tspan>
+<tspan x="310" dy="7.0">                             ..-+##+######*#***#########*#**#****=--==--==-:...                     </tspan>
+<tspan x="310" dy="7.0">                           ...+*##*++*#################***########=---==--++-...                    </tspan>
+<tspan x="310" dy="7.0">                           ..+######**############*#########*==+*=+++*=-=+===:..                    </tspan>
+<tspan x="310" dy="7.0">                         ..:*######################*##########*++=+=##**+=++=-..                    </tspan>
+<tspan x="310" dy="7.0">                         .-*#########################**##*###*****++++*++==+++-.                    </tspan>
+<tspan x="310" dy="7.0">                        .-###################################**++**=-:=*++*+===:.                   </tspan>
+<tspan x="310" dy="7.0">                       ..*################################********+*-::-=+==++==..                  </tspan>
+<tspan x="310" dy="7.0">                       .=########*#****################********###+-:::-.-==-+=:..                  </tspan>
+<tspan x="310" dy="7.0">                       .######******++***************++++++++***+==-:..-:-==+-=:..                  </tspan>
+<tspan x="310" dy="7.0">                      .:######******+++++++**++++++++++++++++==--====---==-=+==-..                  </tspan>
+<tspan x="310" dy="7.0">                     ..:######*****+++++++++++++++++++++++====-------==----=+*=-..                  </tspan>
+<tspan x="310" dy="7.0">                      .-######****+++++++++++++++++++++++======-=-::::-----==**=..                  </tspan>
+<tspan x="310" dy="7.0">                      .-#####*****+++*********+++++++++++*******+==-:::----=+**+..                  </tspan>
+<tspan x="310" dy="7.0">                       -#####*******+++++==+++****++++++****++====----::::-=+**+:.                  </tspan>
+<tspan x="310" dy="7.0">                       -###**=-=++++++++++=====++*++++++++==+=========--::----+*...                 </tspan>
+<tspan x="310" dy="7.0">                     ..:#*=***+=+++=++++++*++++++++****=+++***+++++-===-::::==-=....                </tspan>
+<tspan x="310" dy="7.0">                 ..:+++=#*##***=+++++++********++++**+*=++*******+++++==-:--++---++-..              </tspan>
+<tspan x="310" dy="7.0">                ...+++++*###***+++++*++++++++***++*+++=+==+*+=++++++=+==--=-====++++:..             </tspan>
+<tspan x="310" dy="7.0">                ..:+++++++##***+=+++++++++++++++++*+++==+=++++=+++===----:::-======+=..             </tspan>
+<tspan x="310" dy="7.0">                ..:+++++++#****++===+++=++++==++**++++===+--===+===----.::::-===--+++...            </tspan>
+<tspan x="310" dy="7.0">                ...+*+++*##***++++======+++++++*+++++=---===---------:::::::-+++=:=++:.             </tspan>
+<tspan x="310" dy="7.0">                ...=*++***##**++++++========+****+++==----++===-----:::::-::--+++=-+-...            </tspan>
+<tspan x="310" dy="7.0">                 ..:*+****##**+++++++++++++**++++++====-----+++======--::--:-==*+-+-...             </tspan>
+<tspan x="310" dy="7.0">                 ...-*+***##****+++++++++***++++++++===++===+**+++====-----:-++-===....             </tspan>
+<tspan x="310" dy="7.0">                  ...+**+*###***++++++++***********+++*****+++**+++++===-----:==--..                </tspan>
+<tspan x="310" dy="7.0">                  ...-*****##****+++++**#****#############*+++***++++++=-=-==:---:..                </tspan>
+<tspan x="310" dy="7.0">                  ...:++++*###****++++*###*****##*********++***#*++++++===-=+-:-=:...               </tspan>
+<tspan x="310" dy="7.0">                  .....:--:-###*#**++**##***+++++******++++*****#*+++++++==-:-==:...                </tspan>
+<tspan x="310" dy="7.0">                           .+#**##**++****##++#=+=-=--+==+=###****+++**++==.......                  </tspan>
+<tspan x="310" dy="7.0">                           ..*#***#******+*****++++++**+===++++**+++***+++-.                        </tspan>
+<tspan x="310" dy="7.0">                           ..-####*******+++++++++++++++++++++++++*****++=...                       </tspan>
+<tspan x="310" dy="7.0">                             .+#####****+++++************+++++++++******+:..                        </tspan>
+<tspan x="310" dy="7.0">                         ....:-########******++*********+++++++++*******-.                          </tspan>
+<tspan x="310" dy="7.0">                         ...-+**########******++******+++++++*+*******+=.                           </tspan>
+<tspan x="310" dy="7.0">                        ...--+#**########********+***+++++++***+*****+:..                           </tspan>
+<tspan x="310" dy="7.0">                        ..:--+#****#*####**#*****************+****++=:..                            </tspan>
+<tspan x="310" dy="7.0">                      ...-::-=*******#########******#********#****+--...                            </tspan>
+<tspan x="310" dy="7.0">                     ...------#**+*******######*****###****##***+==--....                           </tspan>
+<tspan x="310" dy="7.0">                  .....:------*#*++++******#################**++===--.....                          </tspan>
+<tspan x="310" dy="7.0">                ......---------#**+++++*********######**#****++===--=:.........                     </tspan>
+<tspan x="310" dy="7.0">             ......::--------:-+#**++++++*+***************++++====--+:...  ...........              </tspan>
+<tspan x="310" dy="7.0">        .......::------------::-*#**++++++++++++**+++++++++++=+===-=*:..  ......  ........          </tspan>
+  <tspan x="310" dy="7.0">  .......::::::::------------:::-****+++++++++++++++++++++++++===-=*+....   .... .................. </tspan>
+<tspan x="310" dy="7.0">.......:-------------------::::::-#***++++++++++++++++++++++++++=+**=....    ...    ................</tspan>
+<tspan x="310" dy="7.0">.........:-----------------:::::::-*****+++++++++++++++++++++++++***:....          ..:..............</tspan>
+<tspan x="310" dy="7.0">........::::----------------:::::::-*****++++++++++++++++++++++****-...            ...:....:........</tspan>
+<tspan x="310" dy="7.0">..:::--::::::----------------::::::::+****+++++++++++++++++++*****+:...             ................</tspan>
+<tspan x="310" dy="7.0">..------::::-:---------------:::::::::+****+++++++++++++++++*****#-.:-...             ...........:.:</tspan>
+<tspan x="310" dy="7.0">.:--------------------------::::::::--:-*****++++++++++++++******::-=-::..            ..........::::</tspan>
+<tspan x="310" dy="7.0">----------------------:----:::::::----:::=***+++++++++++++*****=::-=-::::....     .............:::::</tspan>
+<tspan x="310" dy="7.0">----------------:-----::::::-:::-=---::::::-+++++++++++++**+:::----::::::::....  ..............:::::</tspan>
   </text>
-
-  <!-- Right Side Content -->
-  
-  <!-- Title / Greeting -->
-  <text x="530" y="100" class="name-text">Hi 👋 I'm Naman Jain</text>
-
-  <!-- Prompt and Animated Roles Typewriter -->
-  <text x="530" y="165" class="prompt-text">naman@portfolio:~$ </text>
-  
-  <!-- Typing text overlays -->
-  <text class="role-text" clip-path="url(#clip1)" x="705" y="165">
-    AI Engineer
-    <animate attributeName="opacity" 
-             values="1;1;1;1;1;0;0" 
-             keyTimes="0;0.02;0.10;0.25;0.33;0.331;1" 
-             dur="12s" repeatCount="indefinite" />
-  </text>
-  <text class="role-text" clip-path="url(#clip2)" x="705" y="165">
-    Full Stack Developer
-    <animate attributeName="opacity" 
-             values="0;0;1;1;1;1;0;0" 
-             keyTimes="0;0.349;0.35;0.43;0.58;0.66;0.661;1" 
-             dur="12s" repeatCount="indefinite" />
-  </text>
-  <text class="role-text" clip-path="url(#clip3)" x="705" y="165">
-    Product Builder
-    <animate attributeName="opacity" 
-             values="0;0;0;1;1;1;1;0" 
-             keyTimes="0;0.679;0.68;0.76;0.91;0.99;0.991;1" 
-             dur="12s" repeatCount="indefinite" />
-  </text>
-
-  <!-- Cursors for Typewriter roles -->
-  <!-- Cursor 1 -->
-  <rect y="148" width="8" height="22" fill="#00FF87">
-    <animate attributeName="x" 
-             values="705;705;842;842;705;705;705" 
-             keyTimes="0;0.02;0.10;0.25;0.33;0.331;1" 
-             dur="12s" repeatCount="indefinite" />
-    <animate attributeName="opacity" 
-             values="1;1;1;1;1;0;0" 
-             keyTimes="0;0.02;0.10;0.25;0.33;0.331;1" 
-             dur="12s" repeatCount="indefinite" />
-    <animate attributeName="visibility"
-             values="visible;hidden;visible"
-             dur="0.8s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- Cursor 2 -->
-  <rect y="148" width="8" height="22" fill="#00FF87">
-    <animate attributeName="x" 
-             values="705;705;705;950;950;705;705;705" 
-             keyTimes="0;0.349;0.35;0.43;0.58;0.66;0.661;1" 
-             dur="12s" repeatCount="indefinite" />
-    <animate attributeName="opacity" 
-             values="0;0;1;1;1;1;0;0" 
-             keyTimes="0;0.349;0.35;0.43;0.58;0.66;0.661;1" 
-             dur="12s" repeatCount="indefinite" />
-    <animate attributeName="visibility"
-             values="visible;hidden;visible"
-             dur="0.8s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- Cursor 3 -->
-  <rect y="148" width="8" height="22" fill="#00FF87">
-    <animate attributeName="x" 
-             values="705;705;705;890;890;705;705;705" 
-             keyTimes="0;0.679;0.68;0.76;0.91;0.99;0.991;1" 
-             dur="12s" repeatCount="indefinite" />
-    <animate attributeName="opacity" 
-             values="0;0;1;1;1;1;0;0" 
-             keyTimes="0;0.679;0.68;0.76;0.91;0.99;0.991;1" 
-             dur="12s" repeatCount="indefinite" />
-    <animate attributeName="visibility"
-             values="visible;hidden;visible"
-             dur="0.8s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- Currently Building Section -->
-  <text x="530" y="235" class="heading-text">🚀 Currently Building</text>
-  
-  <text x="530" y="268" class="bullet-text">• Voice AI</text>
-  <text x="530" y="298" class="bullet-text">• MCP</text>
-  <text x="530" y="328" class="bullet-text">• Healthcare AI</text>
-
-  <!-- Chat with me Section -->
-  <text x="530" y="390" class="heading-text">💬 Chat With Me</text>
-
-  <!-- Clickable-looking Chat Box Card -->
-  <g transform="translate(530, 410)">
-    <rect width="340" height="75" rx="8" class="card-border" />
-    
-    <!-- Chat Icon / Details -->
-    <text x="20" y="30" class="chat-header">Hello! Ask me anything.</text>
-    
-    <!-- Assistant Action Button -->
-    <text x="20" y="54" class="chat-btn-text">▶ Open Naman Bot</text>
-  </g>
 </svg>

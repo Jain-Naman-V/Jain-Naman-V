@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" width="260" height="50">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap');
+      .btn-bg {
+        fill: #0B0F19;
+        stroke: url(#btnGrad);
+        stroke-width: 2;
+      }
+      .btn-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        fill: #BF5AF2;
+        text-anchor: middle;
+      }
+    </style>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#D946EF" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="256" height="46" rx="23" class="btn-bg" />
+  <text x="130" y="29" class="btn-text">🌐 Visit Portfolio</text>
+</svg>
