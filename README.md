@@ -1,6 +1,28 @@
-<p align="center">
-  <img src="banner.svg" width="100%" alt="Naman Jain - AI Engineer & Forward Deploy Engineer" />
-</p>
+<!-- Terminal Window: Introduction -->
+<table width="100%" style="border-collapse: collapse; border: 1px solid #1E293B;">
+  <tr style="background-color: #1E293B; height: 30px;">
+    <td style="padding-left: 10px; font-family: monospace; font-size: 13px; color: #64748B;">
+      🔴 🟡 🟢 &nbsp;&nbsp;&nbsp;&nbsp; naman@portfolio: ~ (intro)
+    </td>
+  </tr>
+  <tr style="background-color: #0B0F19;">
+    <td style="padding: 15px; padding-bottom: 25px;">
+      <img src="banner.svg" width="100%" alt="Naman Jain - AI Engineer & Forward Deploy Engineer" />
+      <br/><br/>
+      <p align="center">
+        <a href="https://huggingface.co/spaces/namanvjain/carrerbot" title="Open Naman Bot">
+          <img src="button_bot.svg" height="42" alt="Open Naman Bot" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://namanvjain.netlify.app/" title="Visit My Portfolio">
+          <img src="button_portfolio.svg" height="42" alt="Visit My Portfolio" />
+        </a>
+        &nbsp;&nbsp;
+        <!-- START_RESUME_LINK --><a href="Resume/NamamJainResume.pdf" title="Download Resume"><img src="button_resume.svg" height="42" alt="Download Resume" /></a><!-- END_RESUME_LINK -->
+      </p>
+    </td>
+  </tr>
+</table>
 
 
 <br/>
