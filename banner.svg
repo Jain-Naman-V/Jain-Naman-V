@@ -125,7 +125,7 @@
       <tspan class="cmd">cat intro.txt</tspan>
     </text>
     <!-- Blinking cursor after command -->
-    <rect x="275" y="62" width="8" height="17" class="cursor" />
+    <rect x="335" y="62" width="8" height="17" class="cursor" />
   </g>
 
   <!-- Bio Output (line-by-line typing) -->
@@ -148,7 +148,7 @@
       <tspan class="prompt">naman@portfolio:~$ </tspan>
       <tspan class="cmd">./view portrait.sh</tspan>
     </text>
-    <rect x="310" y="197" width="8" height="17" class="cursor" />
+    <rect x="380" y="197" width="8" height="17" class="cursor" />
   </g>
 
   <!-- ═══════ ASCII Art Portrait (Full Width Centered) ═══════ -->
