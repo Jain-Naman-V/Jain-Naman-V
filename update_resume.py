@@ -35,8 +35,9 @@ def main():
         print("Warning: Resume link placeholder comments (<!-- START_RESUME_LINK --> ... <!-- END_RESUME_LINK -->) not found in README.md.")
         return
 
-    # Replace the old path with the new path
-    new_content = re.sub(pattern, rf"\g<1>Resume/{latest_filename}\g<3>", content, flags=re.DOTALL)
+    # Replace the old path with the raw GitHub download link
+    raw_url = f"https://raw.githubusercontent.com/Jain-Naman-V/Jain-Naman-V/main/Resume/{latest_filename}"
+    new_content = re.sub(pattern, rf"\g<1>{raw_url}\g<3>", content, flags=re.DOTALL)
 
     # Write changes back to README.md
     with open(readme_path, "w", encoding="utf-8") as f:

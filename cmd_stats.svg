@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 32" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" width="100%">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
@@ -21,17 +21,17 @@
         50% { opacity: 0; }
       }
     </style>
-    <clipPath id="clip">
-      <rect x="245" y="0" width="0" height="32">
+    <clipPath id="clip-stats">
+      <rect x="245" y="5" width="0" height="30">
         <animate attributeName="width" from="0" to="400" dur="1s" begin="0.2s" fill="freeze" />
       </rect>
     </clipPath>
   </defs>
-  <text x="40" y="22">
+  <text x="40" y="26">
     <tspan class="prompt">naman@portfolio:~$ </tspan>
-    <tspan class="cmd" clip-path="url(#clip)">show github-stats --user Jain-Naman-V</tspan>
+    <tspan class="cmd" clip-path="url(#clip-stats)">show github-stats --user Jain-Naman-V</tspan>
   </text>
-  <rect x="245" y="6" width="8" height="20" class="cursor">
+  <rect x="245" y="10" width="8" height="20" class="cursor">
     <animate attributeName="x" from="245" to="645" dur="1s" begin="0.2s" fill="freeze" />
   </rect>
 </svg>
