@@ -1,4 +1,5 @@
-<table width="100%" bgcolor="#0B0F19" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 1px solid #1E293B;">
+<p align="center">
+<table width="85%" bgcolor="#0B0F19" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 1px solid #1E293B;">
 <tr bgcolor="#1E293B" height="30">
 <td style="padding-left: 12px; font-family: monospace; font-size: 13px; color: #64748B;">
 🔴 🟡 🟢 &nbsp;&nbsp;&nbsp;&nbsp; naman@portfolio: ~
@@ -11,16 +12,16 @@
 <br/><br/>
 <p align="center">
 <a href="https://huggingface.co/spaces/namanvjain/carrerbot" title="Open Naman Bot">
-<img src="button_bot.svg" height="36" alt="Open Naman Bot" />
+<img src="button_bot.svg" height="32" alt="Open Naman Bot" />
 </a>
 &nbsp;&nbsp;
 <a href="https://namanvjain.netlify.app/" title="Visit My Portfolio">
-<img src="button_portfolio.svg" height="36" alt="Visit My Portfolio" />
+<img src="button_portfolio.svg" height="32" alt="Visit My Portfolio" />
 </a>
 &nbsp;&nbsp;
-<!-- START_RESUME_LINK --><a href="https://raw.githubusercontent.com/Jain-Naman-V/Jain-Naman-V/main/Resume/NamanJainResume.pdf" download="NamanJainResume.pdf" title="Download Resume"><img src="button_resume.svg" height="36" alt="Download Resume" /></a><!-- END_RESUME_LINK -->
+<!-- START_RESUME_LINK --><a href="https://raw.githubusercontent.com/Jain-Naman-V/Jain-Naman-V/main/Resume/NamanJainResume.pdf" download="NamanJainResume.pdf" title="Download Resume"><img src="button_resume.svg" height="32" alt="Download Resume" /></a><!-- END_RESUME_LINK -->
 </p>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 20px 0;" />
 
 <!-- Section 2: GitHub Statistics -->
 <p style="margin: 0;"><img src="cmd_stats.svg" width="100%" alt="Command: show github-stats" /></p>
@@ -29,31 +30,31 @@
 <tr>
 <td width="50%" align="center">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-stats-extended.vercel.app/api?username=Jain-Naman-V&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;icon_color=4FACFE&amp;text_color=94A3B8" alt="GitHub Stats" width="95%" />
+<img src="https://github-stats-extended.vercel.app/api?username=Jain-Naman-V&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;icon_color=4FACFE&amp;text_color=94A3B8" alt="GitHub Stats" width="90%" />
 </a>
 </td>
 <td width="50%" align="center">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Jain-Naman-V&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B0F19&amp;fire=00FF87&amp;ring=00F2FE&amp;currStreakNum=FFFFFF" alt="GitHub Streak" width="95%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Jain-Naman-V&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B0F19&amp;fire=00FF87&amp;ring=00F2FE&amp;currStreakNum=FFFFFF" alt="GitHub Streak" width="90%" />
 </a>
 </td>
 </tr>
 </table>
 <p align="center">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Jain-Naman-V&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;text_color=94A3B8" alt="Top Languages" width="60%" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Jain-Naman-V&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;text_color=94A3B8" alt="Top Languages" width="55%" />
 </a>
 </p>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 20px 0;" />
 
 <!-- Section 3: Tech Stack Grid -->
 <p style="margin: 0;"><img src="cmd_tech.svg" width="100%" alt="Command: show tech-stack" /></p>
 <br/>
-<table width="100%" border="0" cellpadding="6" cellspacing="6">
+<table width="100%" border="0" cellpadding="5" cellspacing="5">
 <tr>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#00F2FE" size="3"><b>🤖 AI & Machine Learning</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#00F2FE" size="3"><b>🤖 AI & ML</b></font><br/><br/>
+<font color="#94A3B8" size="2">
 • OpenAI & Anthropic<br/>
 • Gemini & Hugging Face<br/>
 • LangChain & LangGraph<br/>
@@ -65,7 +66,7 @@
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#BF5AF2" size="3"><b>💻 Languages</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • Python<br/>
 • TypeScript<br/>
 • JavaScript<br/>
@@ -76,7 +77,7 @@
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#00FF87" size="3"><b>⚙️ Backend</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • FastAPI & Flask<br/>
 • Express.js & Node.js<br/>
 • REST APIs & WebSockets<br/>
@@ -88,7 +89,7 @@
 <tr>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#BF5AF2" size="3"><b>🎨 Frontend</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • React & Next.js<br/>
 • HTML5 & CSS3<br/>
 • Tailwind CSS<br/>
@@ -98,29 +99,29 @@
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#00FF87" size="3"><b>💾 Databases</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • PostgreSQL<br/>
 • MySQL<br/>
 • MongoDB<br/>
 • Redis<br/>
-• Database Optimization
+• DB Optimization
 </font>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#00F2FE" size="3"><b>☁️ Cloud & DevOps</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • AWS & Azure<br/>
 • Google Cloud (GCP)<br/>
 • Docker & Kubernetes<br/>
 • Linux (Debian/Ubuntu)<br/>
-• Nginx & Reverse Proxies
+• Nginx & Proxies
 </font>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#38BDF8" size="3"><b>🔄 Automation</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • n8n workflows<br/>
 • Make (Integromat)<br/>
 • Zapier Integrations<br/>
@@ -130,7 +131,7 @@
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#D946EF" size="3"><b>🔌 Integrations</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • OAuth 2.0 Auth<br/>
 • Google APIs Suite<br/>
 • Twilio Voice/SMS<br/>
@@ -140,7 +141,7 @@
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
 <font color="#00FF87" size="3"><b>🔍 Tools & Data</b></font><br/><br/>
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 • Pandas & NumPy<br/>
 • Scikit-learn & LSTM<br/>
 • Git, GitHub & Postman<br/>
@@ -150,7 +151,7 @@
 </td>
 </tr>
 </table>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 20px 0;" />
 
 <!-- Section 4: Featured Projects -->
 <p style="margin: 0;"><img src="cmd_projects.svg" width="100%" alt="Command: show projects" /></p>
@@ -159,28 +160,28 @@
 <tr>
 <td width="33%" valign="top" align="left">
 <font color="#00FF87" size="3"><b>🎙️ Voice AI Agent</b></font><br/><br/>
-<font color="#94A3B8" size="3">Real-time conversational AI system built with low latency audio streaming, OpenAI API, and automated flow integrations.</font><br/><br/>
+<font color="#94A3B8" size="2">Real-time conversational AI system with low latency audio streaming and OpenAI API.</font><br/><br/>
 <font color="#FFFFFF"><code>Python</code> <code>OpenAI</code> <code>FastAPI</code></font>
 </td>
 <td width="33%" valign="top" align="left">
 <font color="#00F2FE" size="3"><b>🔌 MCP Server Bridge</b></font><br/><br/>
-<font color="#94A3B8" size="3">A Model Context Protocol server bridge to securely connect LLMs to local data repositories and terminal systems.</font><br/><br/>
-<font color="#FFFFFF"><code>TypeScript</code> <code>Docker</code> <code>Kubernetes</code></font>
+<font color="#94A3B8" size="2">Model Context Protocol server bridge to connect LLMs to local data repositories.</font><br/><br/>
+<font color="#FFFFFF"><code>TypeScript</code> <code>Docker</code> <code>K8s</code></font>
 </td>
 <td width="33%" valign="top" align="left">
-<font color="#BF5AF2" size="3"><b>🏥 Healthcare AI Diagnostics</b></font><br/><br/>
-<font color="#94A3B8" size="3">An intelligent scheduling portal integration managing FHIR appointments and clinical diagnostic workflows.</font><br/><br/>
+<font color="#BF5AF2" size="3"><b>🏥 Healthcare AI</b></font><br/><br/>
+<font color="#94A3B8" size="2">Intelligent scheduling portal managing FHIR appointments and clinical workflows.</font><br/><br/>
 <font color="#FFFFFF"><code>Azure</code> <code>FastAPI</code> <code>OpenAI</code></font>
 </td>
 </tr>
 </table>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 20px 0;" />
 
 <!-- Section 5: Recent Activity Log -->
 <p style="margin: 0;"><img src="cmd_activity.svg" width="100%" alt="Command: cat activity.log" /></p>
 <br/>
 <div style="padding-left: 5px;">
-<font color="#94A3B8" size="3">
+<font color="#94A3B8" size="2">
 <!-- START_SECTION:activity -->
 🚀 Created repository <font color="#00F2FE"><b>Jain-Naman-V/Jain-Naman-V</b></font><br/>
 🔧 Styled profile README with neon animated typewriter banner and stats<br/>
@@ -191,8 +192,8 @@
 </td>
 </tr>
 </table>
+</p>
 
-<br/>
 <br/>
 
 <p align="center">
