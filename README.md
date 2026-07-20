@@ -1,51 +1,51 @@
-<table width="100%" style="border-collapse: collapse; border: 1px solid #1E293B;">
+<table align="center" width="92%" style="border-collapse: collapse; border: 1px solid #1E293B; max-width: 900px;">
 <tr style="background-color: #1E293B; height: 30px;">
 <td style="padding-left: 10px; font-family: monospace; font-size: 13px; color: #64748B;">
 🔴 🟡 🟢 &nbsp;&nbsp;&nbsp;&nbsp; naman@portfolio: ~
 </td>
 </tr>
 <tr style="background-color: #0B0F19;">
-<td style="padding: 20px; padding-bottom: 30px; font-family: monospace;">
+<td style="padding: 16px; padding-bottom: 24px; font-family: monospace;">
 <!-- Section 1: Intro Banner & Action Buttons -->
 <img src="banner.svg" width="100%" alt="Naman Jain - AI Engineer & Forward Deploy Engineer" />
 <br/><br/>
 <p align="center">
 <a href="https://huggingface.co/spaces/namanvjain/carrerbot" title="Open Naman Bot">
-<img src="button_bot.svg" height="42" alt="Open Naman Bot" />
+<img src="button_bot.svg" height="36" alt="Open Naman Bot" />
 </a>
 &nbsp;&nbsp;
 <a href="https://namanvjain.netlify.app/" title="Visit My Portfolio">
-<img src="button_portfolio.svg" height="42" alt="Visit My Portfolio" />
+<img src="button_portfolio.svg" height="36" alt="Visit My Portfolio" />
 </a>
 &nbsp;&nbsp;
-<!-- START_RESUME_LINK --><a href="Resume/NamanJainResume.pdf" title="Download Resume"><img src="button_resume.svg" height="42" alt="Download Resume" /></a><!-- END_RESUME_LINK -->
+<!-- START_RESUME_LINK --><a href="Resume/NamanJainResume.pdf" title="Download Resume"><img src="button_resume.svg" height="36" alt="Download Resume" /></a><!-- END_RESUME_LINK -->
 </p>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 30px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
 <!-- Section 2: GitHub Statistics -->
 <p style="margin: 0;"><img src="cmd_stats.svg" width="100%" height="32" alt="Command: show github-stats" /></p>
 <br/>
 <p align="center">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-stats-extended.vercel.app/api?username=Jain-Naman-V&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;icon_color=4FACFE&amp;text_color=94A3B8" alt="GitHub Stats" width="48%" />
+<img src="https://github-stats-extended.vercel.app/api?username=Jain-Naman-V&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;icon_color=4FACFE&amp;text_color=94A3B8" alt="GitHub Stats" width="45%" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Jain-Naman-V&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B0F19&amp;fire=00FF87&amp;ring=00F2FE&amp;currStreakNum=FFFFFF" alt="GitHub Streak" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Jain-Naman-V&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B0F19&amp;fire=00FF87&amp;ring=00F2FE&amp;currStreakNum=FFFFFF" alt="GitHub Streak" width="45%" />
 </a>
 </p>
 <p align="center">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Jain-Naman-V&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;text_color=94A3B8" alt="Top Languages" width="60%" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Jain-Naman-V&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;text_color=94A3B8" alt="Top Languages" width="54%" />
 </a>
 </p>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 30px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
 <!-- Section 3: Tech Stack Grid -->
 <p style="margin: 0;"><img src="cmd_tech.svg" width="100%" height="32" alt="Command: show tech-stack" /></p>
 <br/>
-<table width="100%" style="border-spacing: 12px; border-collapse: separate; background: transparent;">
+<table width="100%" style="border-spacing: 10px; border-collapse: separate; background: transparent;">
 <tr>
 <!-- Block 1 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#00F2FE"><b>🤖 AI & Machine Learning</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -59,7 +59,7 @@
 </font>
 </td>
 <!-- Block 2 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#BF5AF2"><b>💻 Languages</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -72,7 +72,7 @@
 </font>
 </td>
 <!-- Block 3 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#00FF87"><b>⚙️ Backend</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -86,7 +86,7 @@
 </tr>
 <tr>
 <!-- Block 4 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#BF5AF2"><b>🎨 Frontend</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -98,7 +98,7 @@
 </font>
 </td>
 <!-- Block 5 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#00FF87"><b>💾 Databases</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -110,7 +110,7 @@
 </font>
 </td>
 <!-- Block 6 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#00F2FE"><b>☁️ Cloud & DevOps</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -124,7 +124,7 @@
 </tr>
 <tr>
 <!-- Block 7 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#38BDF8"><b>🔄 Automation</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -136,7 +136,7 @@
 </font>
 </td>
 <!-- Block 8 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#D946EF"><b>🔌 Integrations</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -148,7 +148,7 @@
 </font>
 </td>
 <!-- Block 9 -->
-<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 12px;">
+<td width="33%" valign="top" style="background-color: #0F172A; border: 1px solid #1E293B; border-radius: 6px; padding: 10px;">
 <font color="#00FF87"><b>🔍 Tools & Data</b></font><br/>
 <br/>
 <font color="#94A3B8" size="2" style="font-family: monospace;">
@@ -161,7 +161,7 @@
 </td>
 </tr>
 </table>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 30px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
 <!-- Section 4: Featured Projects -->
 <p style="margin: 0;"><img src="cmd_projects.svg" width="100%" height="32" alt="Command: show projects" /></p>
 <br/>
@@ -190,7 +190,7 @@
 </td>
 </tr>
 </table>
-<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 30px 0;" />
+<hr style="border: 0; border-top: 1px dashed #1E293B; margin: 24px 0;" />
 <!-- Section 5: Recent Activity Log -->
 <p style="margin: 0;"><img src="cmd_activity.svg" width="100%" height="32" alt="Command: cat activity.log" /></p>
 <br/>
