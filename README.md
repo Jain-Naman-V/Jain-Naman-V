@@ -1,5 +1,5 @@
 <p align="center">
-<table width="85%" bgcolor="#0B0F19" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 1px solid #1E293B;">
+<table width="100%" bgcolor="#0B0F19" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 1px solid #1E293B;">
 <tr bgcolor="#1E293B" height="30">
 <td style="padding-left: 12px; font-family: monospace; font-size: 13px; color: #64748B;">
 🔴 🟡 🟢 &nbsp;&nbsp;&nbsp;&nbsp; naman@portfolio: ~
@@ -28,21 +28,23 @@
 <br/>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr>
-<td width="50%" align="center">
+<td width="50%" align="center" style="padding: 4px;">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-stats-extended.vercel.app/api?username=Jain-Naman-V&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;icon_color=4FACFE&amp;text_color=94A3B8" alt="GitHub Stats" width="90%" />
+<img src="https://github-stats-extended.vercel.app/api?username=Jain-Naman-V&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;icon_color=4FACFE&amp;text_color=94A3B8" alt="GitHub Stats" style="max-width: 100%; height: auto;" />
 </a>
 </td>
-<td width="50%" align="center">
+</tr>
+<tr>
+<td width="50%" align="center" style="padding: 4px;">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Jain-Naman-V&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B0F19&amp;fire=00FF87&amp;ring=00F2FE&amp;currStreakNum=FFFFFF" alt="GitHub Streak" width="90%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Jain-Naman-V&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B0F19&amp;fire=00FF87&amp;ring=00F2FE&amp;currStreakNum=FFFFFF" alt="GitHub Streak" style="max-width: 100%; height: auto;" />
 </a>
 </td>
 </tr>
 </table>
 <p align="center">
 <a href="https://github.com/Jain-Naman-V" target="_blank">
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Jain-Naman-V&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;text_color=94A3B8" alt="Top Languages" width="55%" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Jain-Naman-V&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B0F19&amp;title_color=00F2FE&amp;text_color=94A3B8" alt="Top Languages" style="max-width: 100%; height: auto;" />
 </a>
 </p>
 <hr style="border: 0; border-top: 1px dashed #1E293B; margin: 20px 0;" />
@@ -50,11 +52,11 @@
 <!-- Section 3: Tech Stack Grid -->
 <p style="margin: 0;"><img src="cmd_tech.svg" width="100%" alt="Command: show tech-stack" /></p>
 <br/>
-<table width="100%" border="0" cellpadding="5" cellspacing="5">
+<table width="100%" border="0" cellpadding="12" cellspacing="6">
 <tr>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#00F2FE" size="3"><b>🤖 AI & ML</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #00F2FE; font-size: 15px; font-weight: 600;"><b>🤖 AI & ML</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • OpenAI & Anthropic<br/>
 • Gemini & Hugging Face<br/>
 • LangChain & LangGraph<br/>
@@ -62,92 +64,92 @@
 • Agentic RAG Systems<br/>
 • Prompt Tuning<br/>
 • Vector Databases
-</font>
+</span>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#BF5AF2" size="3"><b>💻 Languages</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #BF5AF2; font-size: 15px; font-weight: 600;"><b>💻 Languages</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • Python<br/>
 • TypeScript<br/>
 • JavaScript<br/>
 • Java<br/>
 • C# & C++<br/>
 • SQL
-</font>
+</span>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#00FF87" size="3"><b>⚙️ Backend</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #00FF87; font-size: 15px; font-weight: 600;"><b>⚙️ Backend</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • FastAPI & Flask<br/>
 • Express.js & Node.js<br/>
 • REST APIs & WebSockets<br/>
 • Microservices<br/>
 • Event Architectures
-</font>
+</span>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#BF5AF2" size="3"><b>🎨 Frontend</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #BF5AF2; font-size: 15px; font-weight: 600;"><b>🎨 Frontend</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • React & Next.js<br/>
 • HTML5 & CSS3<br/>
 • Tailwind CSS<br/>
 • Bootstrap<br/>
 • Responsive Design
-</font>
+</span>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#00FF87" size="3"><b>💾 Databases</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #00FF87; font-size: 15px; font-weight: 600;"><b>💾 Databases</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • PostgreSQL<br/>
 • MySQL<br/>
 • MongoDB<br/>
 • Redis<br/>
 • DB Optimization
-</font>
+</span>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#00F2FE" size="3"><b>☁️ Cloud & DevOps</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #00F2FE; font-size: 15px; font-weight: 600;"><b>☁️ Cloud & DevOps</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • AWS & Azure<br/>
 • Google Cloud (GCP)<br/>
 • Docker & Kubernetes<br/>
 • Linux (Debian/Ubuntu)<br/>
 • Nginx & Proxies
-</font>
+</span>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#38BDF8" size="3"><b>🔄 Automation</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #38BDF8; font-size: 15px; font-weight: 600;"><b>🔄 Automation</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • n8n workflows<br/>
 • Make (Integromat)<br/>
 • Zapier Integrations<br/>
 • Webhooks automation<br/>
 • Cron scheduling
-</font>
+</span>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#D946EF" size="3"><b>🔌 Integrations</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #D946EF; font-size: 15px; font-weight: 600;"><b>🔌 Integrations</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • OAuth 2.0 Auth<br/>
 • Google APIs Suite<br/>
 • Twilio Voice/SMS<br/>
 • WhatsApp Business API<br/>
 • Third-Party APIs
-</font>
+</span>
 </td>
 <td width="33%" valign="top" bgcolor="#0F172A" style="border: 1px solid #1E293B; border-radius: 6px;">
-<font color="#00FF87" size="3"><b>🔍 Tools & Data</b></font><br/><br/>
-<font color="#94A3B8" size="2">
+<span style="color: #00FF87; font-size: 15px; font-weight: 600;"><b>🔍 Tools & Data</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 • Pandas & NumPy<br/>
 • Scikit-learn & LSTM<br/>
 • Git, GitHub & Postman<br/>
 • VS Code & Figma<br/>
 • Vercel, Render, Netlify
-</font>
+</span>
 </td>
 </tr>
 </table>
@@ -159,19 +161,19 @@
 <table width="100%" border="0" cellpadding="4" cellspacing="0">
 <tr>
 <td width="33%" valign="top" align="left">
-<font color="#00FF87" size="3"><b>🎙️ Voice AI Agent</b></font><br/><br/>
-<font color="#94A3B8" size="2">Real-time conversational AI system with low latency audio streaming and OpenAI API.</font><br/><br/>
-<font color="#FFFFFF"><code>Python</code> <code>OpenAI</code> <code>FastAPI</code></font>
+<span style="color: #00FF87; font-size: 15px; font-weight: 600;"><b>🎙️ Voice AI Agent</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">Real-time conversational AI system with low latency audio streaming and OpenAI API.</span><br/><br/>
+<span style="color: #FFFFFF;"><code>Python</code> <code>OpenAI</code> <code>FastAPI</code></span>
 </td>
 <td width="33%" valign="top" align="left">
-<font color="#00F2FE" size="3"><b>🔌 MCP Server Bridge</b></font><br/><br/>
-<font color="#94A3B8" size="2">Model Context Protocol server bridge to connect LLMs to local data repositories.</font><br/><br/>
-<font color="#FFFFFF"><code>TypeScript</code> <code>Docker</code> <code>K8s</code></font>
+<span style="color: #00F2FE; font-size: 15px; font-weight: 600;"><b>🔌 MCP Server Bridge</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">Model Context Protocol server bridge to connect LLMs to local data repositories.</span><br/><br/>
+<span style="color: #FFFFFF;"><code>TypeScript</code> <code>Docker</code> <code>K8s</code></span>
 </td>
 <td width="33%" valign="top" align="left">
-<font color="#BF5AF2" size="3"><b>🏥 Healthcare AI</b></font><br/><br/>
-<font color="#94A3B8" size="2">Intelligent scheduling portal managing FHIR appointments and clinical workflows.</font><br/><br/>
-<font color="#FFFFFF"><code>Azure</code> <code>FastAPI</code> <code>OpenAI</code></font>
+<span style="color: #BF5AF2; font-size: 15px; font-weight: 600;"><b>🏥 Healthcare AI</b></span><br/><br/>
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">Intelligent scheduling portal managing FHIR appointments and clinical workflows.</span><br/><br/>
+<span style="color: #FFFFFF;"><code>Azure</code> <code>FastAPI</code> <code>OpenAI</code></span>
 </td>
 </tr>
 </table>
@@ -181,13 +183,13 @@
 <p style="margin: 0;"><img src="cmd_activity.svg" width="100%" alt="Command: cat activity.log" /></p>
 <br/>
 <div style="padding-left: 5px;">
-<font color="#94A3B8" size="2">
+<span style="color: #94A3B8; font-size: 13px; line-height: 1.6;">
 <!-- START_SECTION:activity -->
-🚀 Created repository <font color="#00F2FE"><b>Jain-Naman-V/Jain-Naman-V</b></font><br/>
+🚀 Created repository <span style="color: #00F2FE; font-weight: 600;"><b>Jain-Naman-V/Jain-Naman-V</b></span><br/>
 🔧 Styled profile README with neon animated typewriter banner and stats<br/>
 💬 Linked interactive Career AI Assistant to Hugging Face Space
 <!-- END_SECTION:activity -->
-</font>
+</span>
 </div>
 </td>
 </tr>

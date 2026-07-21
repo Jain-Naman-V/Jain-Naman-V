@@ -82,6 +82,10 @@
     </clipPath>
   </defs>
 
+  <!-- Dark background for visibility in all modes -->
+  <rect width="100%" height="100%" fill="#0B0F19" rx="6" />
+  <rect width="100%" height="100%" fill="none" stroke="#1E293B" stroke-width="1" rx="6" />
+
   <!-- ═══════ Command 1: cat intro.txt ═══════ -->
   <g class="a-prompt1">
     <text x="40" y="40">

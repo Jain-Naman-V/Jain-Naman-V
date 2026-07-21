@@ -27,6 +27,8 @@
       </rect>
     </clipPath>
   </defs>
+  <rect width="100%" height="100%" fill="#0B0F19" rx="4" />
+  <rect width="100%" height="100%" fill="none" stroke="#1E293B" stroke-width="1" rx="4" />
   <text x="40" y="26">
     <tspan class="prompt">naman@portfolio:~$ </tspan>
     <tspan class="cmd" clip-path="url(#clip-projects)">show projects --featured</tspan>
